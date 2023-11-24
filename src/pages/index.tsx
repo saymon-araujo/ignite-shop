@@ -44,7 +44,8 @@ export default function Home({ products }: Props) {
       {products.map((product) => {
         return (
           <div key={product.id}>
-            <Link href={`/product/${product.id}`}>
+            {/* This Prefetch is nice */}
+            <Link href={`/product/${product.id}`} prefetch={false}>
               <Product className="keen-slider__slide">
                 <Image src={product.imageUrl} alt="" width={520} height={480} />
                 <footer>
