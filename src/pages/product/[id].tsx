@@ -47,9 +47,6 @@ export default function Product({ product }: ProductProps) {
       alert("Falha ao redirecionar para o checkout");
       console.log(err);
     }
-    // stripe.redirectToCheckout({
-    //   sessionId: product.defaultPriceId,
-    // });
   }
 
   return (
